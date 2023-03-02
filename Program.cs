@@ -9,7 +9,7 @@ class Program
 
         if (password >= 0 && password <= 999999)
         {
-            Console.Write("Enter your code: ");
+            Console.Write("Enter your agency code: ");
             string code = Console.ReadLine();
             
             int unit = password % 10;
