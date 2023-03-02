@@ -7,7 +7,7 @@ class Program
         Console.Write("Enter your password : ");
         int password = int.Parse(Console.ReadLine());
 
-        if (password >= 000000 && password <= 999999)
+        if (password >= 0 && password <= 999999)
         {
             Console.Write("Enter your code: ");
             string code = Console.ReadLine();
@@ -51,6 +51,10 @@ class Program
                 {
                     Console.WriteLine("False");
                 }
+            }
+            else 
+            {
+                Console.WriteLine("False");
             }
         }
         else 
