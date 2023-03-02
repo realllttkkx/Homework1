@@ -7,17 +7,17 @@ class Program
         Console.Write("Enter your password : ");
         int password = int.Parse(Console.ReadLine());
 
-        Console.Write("Enter your code: ");
-        string code = Console.ReadLine();
-
-        if (password >= 100000 && password <= 999999)
+        if (password >= 000000 && password <= 999999)
         {
-            int unit= password % 10;
+            Console.Write("Enter your code: ");
+            string code = Console.ReadLine();
+            
+            int unit = password % 10;
             int ten = (password / 10) % 10;
             int hundred = (password / 100) % 10;
             int thousand = (password / 1000) % 10;
             int tenthousand = (password / 10000) % 10;
-            int hundredthousand = (password / 100000) % 10;
+            int hundredthousand = password / 100000;
 
             if (code == "CIA")
             {
