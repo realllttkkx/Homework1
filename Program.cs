@@ -32,7 +32,7 @@ class Program
             }
             else if (code == "FBI")
             {
-                if (hundredthousand >= 4 && hundredthousand <= 7 && hundred % 2 == 0 && hundred != 6 && tenthousand % 2 != 0)
+                if (hundred % 2 == 0 && hundred != 6 && tenthousand % 2 != 0 && hundredthousand >= 4 && hundredthousand <= 7)
                 {
                     Console.WriteLine("True");
                 }
